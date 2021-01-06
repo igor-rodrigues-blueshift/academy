@@ -1,0 +1,30 @@
+{
+	"name": "AzureSqlTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "cotacaoCompra",
+				"type": "varchar"
+			},
+			{
+				"name": "cotacaoVenda",
+				"type": "varchar"
+			},
+			{
+				"name": "dataHoraCotacao",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dolar_stage_igor"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
